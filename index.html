@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie – Tabele HTML i CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Zadanie: Tabela HTML + CSS</h1>
+
+    <!-- 
+        ============================================
+        POLECENIA DO WYKONANIA
+        ============================================
+        
+        1. Stwórz tabelę (minimum 5 wierszy danych + wiersz nagłówka, minimum 4 kolumny).
+           Temat dowolny: plan lekcji, cennik, porównanie produktów, grafik dyżurów itp.
+
+        2. Sformatuj tabelę:
+           - użyj <thead> i <tbody>
+           - ustaw padding, wyrównanie tekstu, szerokość tabeli
+           - sformatuj nagłówki (pogrubienie, kolor tła, kolor tekstu)
+
+        3. Obramowanie:
+           - dodaj i edytuj obramowanie tabeli oraz komórek (border)
+           - zmień styl (solid / dashed / double), grubość i kolor
+           - użyj border-collapse
+
+        4. Łączenie komórek:
+           - użyj atrybutu colspan (łączenie w poziomie)
+           - użyj atrybutu rowspan (łączenie w pionie)
+           - połącz przynajmniej dwie grupy komórek
+
+        5. Efekt hover:
+           - po najechaniu myszką na dowolny wiersz w <tbody> 
+             kolor tła wiersza ma się zmieniać (selektor jest już przygotowany w pliku style.css)
+-->
+
+    <table border>
+        <thead>
+            <tr>
+                <!-- Tutaj wstaw nagłówki kolumn -->
+                <th>Poniedziałek</th>
+                <th>Wtorek</th>
+                <th>Środa</th>
+                <th>Czwartek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Tutaj wstaw wiersze z danymi -->
+            <!-- Pamiętaj o użyciu rowspan i colspan -->
+            <tr>
+                <td rowspan="2">polski</td>
+                <td>Angielski</td>
+                <td>Niemiecki</td>
+                <td rowspan="2">WF</td>
+            </tr>
+            <tr>
+                <td colspan="2">Programowanie</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>Geografia</td>
+                <td>GzW</td>
+                <td>Informatyka</td>
+            </tr>
+            <tr>
+                <td>Historia</td>
+                <td>Matematyka</td>
+                <Td>Matematyka</Td>
+                <td>Polski</td>
+            </tr>
+            <tr>
+                <td>Chemia</td>
+                <td rowspan="2">Grafika</td>
+                <td colspan="2">Bazy danych</td>
+            </tr>
+            <td>Angielski</td>
+            <Td>Polski</Td>
+            <td>Niemiecki</td>
+        </tbody>
+    </table>
+
+</body>
+</html>
